@@ -8,7 +8,7 @@ namespace BannerFlow.Models
 {
     public class Banner
     {
-        [BsonId]
+        [BsonElement("Id")]
         public int Id { get; set; }
 
         [BsonElement("Html")]

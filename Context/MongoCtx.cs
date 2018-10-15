@@ -27,7 +27,7 @@ namespace BannerFlow.Context
         {
             get
             {
-                if(banners == null)
+                if (banners == null)
                 {
                     banners = new BannerRepository<Banner>(db, "banners");
                 }

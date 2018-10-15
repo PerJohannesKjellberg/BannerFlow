@@ -1,5 +1,6 @@
 ﻿using BannerFlow.Context;
 using BannerFlow.Models;
+using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,6 @@ namespace BannerFlow.Services
         {
             return mongoCtx.Banners.Get(id);
         }
-        //IQueryable<Banner> GetAll();
         public void Update(Banner banner)
         {
             mongoCtx.Banners.Update(b => b.Id, banner.Id, banner);
